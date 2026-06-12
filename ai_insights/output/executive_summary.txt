@@ -1,20 +1,20 @@
-**Executive Summary**
+## Workforce Analytics Summary
+
+**Overall Sentiment:** Positive (70.9%)
 
 **Key Findings:**
 
-* Career growth is positively correlated with engagement (70.95%).
-* Department type does not significantly impact engagement (18.0%).
-* Regression analysis shows a strong positive correlation between regression coefficient and engagement (1.00%).
-* An AB test shows that a negative impact on engagement (1.48) from the A/B test.
+* Career growth and engagement are positively correlated (r=0.485, p=0.000).
+* There is no significant difference between departments in terms of engagement (ANOVA p-value=0.233).
+* Regression analysis reveals a strong relationship between regression and R-squared (r=0.931, p=NaN).
 
 **Risks:**
 
-* High correlation between career growth and engagement may mask other important factors.
-* The absence of significant results for department type suggests that other factors may be more influential.
-* The regression analysis results may be misleading due to the presence of outliers.
+* High correlation between career growth and engagement may indicate a causal relationship that needs further investigation.
+* Limited information on department data prevents deeper analysis of potential differences.
 
 **Recommendations:**
 
-* Further investigate the relationship between career growth and engagement, controlling for other relevant variables.
-* Conduct additional analyses to identify the key drivers of engagement.
-* Address the risk of masking other factors by carefully considering the multicollinearity between variables.
+1. Conduct further analysis to explore the causal relationship between career growth and engagement.
+2. Investigate department-specific factors that may influence engagement.
+3. Consider additional data sources to gain more insights into employee behavior and career growth.

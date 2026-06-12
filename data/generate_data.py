@@ -83,19 +83,26 @@ for response_id in range(1, NUM_SURVEYS + 1):
     work_life_balance = random.randint(1, 10)
     compensation = random.randint(1, 10)
 
-    engagement_score = round(
-        (
-            manager_support
-            + career_growth
-            + work_life_balance
-            + compensation
-        )
-        / 4,
-        2,
+    experiment_group = random.choice(
+    ["Program_A", "Program_B"]
+)
+
+    base_score = (
+        manager_support
+        + career_growth
+        + work_life_balance
+        + compensation
+    ) / 4
+
+    if experiment_group == "Program_B":
+        base_score += random.uniform(
+        0.5,
+        1.0
     )
 
-    experiment_group = random.choice(
-        ["Program_A", "Program_B"]
+    engagement_score = round(
+    min(base_score, 10),
+    2
     )
 
     comment_pool = random.choice(

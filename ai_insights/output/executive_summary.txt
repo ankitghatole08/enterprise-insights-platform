@@ -1,0 +1,20 @@
+**Executive Summary**
+
+**Key Findings:**
+
+* Career growth is positively correlated with engagement (70.95%).
+* Department type does not significantly impact engagement (18.0%).
+* Regression analysis shows a strong positive correlation between regression coefficient and engagement (1.00%).
+* An AB test shows that a negative impact on engagement (1.48) from the A/B test.
+
+**Risks:**
+
+* High correlation between career growth and engagement may mask other important factors.
+* The absence of significant results for department type suggests that other factors may be more influential.
+* The regression analysis results may be misleading due to the presence of outliers.
+
+**Recommendations:**
+
+* Further investigate the relationship between career growth and engagement, controlling for other relevant variables.
+* Conduct additional analyses to identify the key drivers of engagement.
+* Address the risk of masking other factors by carefully considering the multicollinearity between variables.

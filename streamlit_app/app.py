@@ -77,6 +77,17 @@ filtered_df = df[
     & (df["experiment_group"].isin(experiment_filter))
 ]
 
+csv_data = filtered_df.to_csv(
+    index=False
+)
+
+st.sidebar.download_button(
+    label="Download Filtered Dataset",
+    data=csv_data,
+    file_name="filtered_dataset.csv",
+    mime="text/csv"
+)
+
 # --------------------------------------------------
 # TITLE
 # --------------------------------------------------
@@ -449,3 +460,30 @@ Maximum 300 words.
         st.markdown(
             result["response"]
         )
+
+        report_name = (
+        "reports/executive_summary.txt"
+        )
+
+        with open(
+            report_name,
+            "w",
+            encoding="utf-8"
+        ) as file:
+
+            file.write(
+                result["response"]
+            )
+
+        with open(
+            report_name,
+            "r",
+            encoding="utf-8"
+        ) as file:
+
+            st.download_button(
+                label="Download Summary",
+                data=file,
+                file_name="executive_summary.txt",
+                mime="text/plain"
+            )

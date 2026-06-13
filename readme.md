@@ -124,7 +124,3 @@ streamlit run streamlit_app/app.py
 ```bash
 pytest
 ```
-
-## CI/CD
-
-GitHub Actions pipeline executes automated tests on every push and pull request.
